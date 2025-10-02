@@ -57,7 +57,7 @@
 
     <header>
         <h1>Selamat Datang di TI UNIMUS</h1>
-        <p>Website Resmi Teknik Informatika</p>
+        <p>Website Resmi Teknologi Informasi</p>
     </header>
 
     <nav>
@@ -76,7 +76,7 @@
         echo "<h2>Halo, $nama!</h2>";
         echo "<p>Hari ini tanggal $tanggal.</p>";
         ?>
-        <p>Program Studi Teknik Informatika Universitas Muhammadiyah Semarang (UNIMUS) berkomitmen mencetak lulusan unggul dalam teknologi informasi.</p>
+        <p>Program Studi Teknologi Informasi Universitas Muhammadiyah Semarang (UNIMUS) berkomitmen mencetak lulusan unggul dalam teknologi informasi.</p>
     </main>
 
     <footer>

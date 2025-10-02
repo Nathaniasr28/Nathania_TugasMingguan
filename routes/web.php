@@ -18,7 +18,11 @@ Route::get('/home', function () {
 });
 
 Route:: get('/profile', function () {
-    return view ('profile');
+    return view ('profile', [
+        "nama" => "Nathania",
+        "nohp" => "081234566",
+        "foto" => "Natha.wbp"
+    ]
 });
 
 Route:: get('/berita', function () {
