@@ -61,11 +61,12 @@
     </header>
 
     <nav>
-        <a href="home.php">Home</a>
-        <a href="profil.php">Profil</a>
-        <a href="dosen.php">Dosen</a>
-        <a href="mahasiswa.php">Mahasiswa</a>
-        <a href="kontak.php">Kontak</a>
+        <a href="/home">Home</a>
+        <a href="/profile">Profil</a>
+        <a href="/berita">Berita</a>
+        <a href="/dosen">Dosen</a>
+        <a href="/mahasiswa">Mahasiswa</a>
+        <a href="/contact">Kontak</a>
     </nav>
 
     <main>

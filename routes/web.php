@@ -18,11 +18,19 @@ Route::get('/home', function () {
 });
 
 Route:: get('/profile', function () {
-    return view ('profile', [
-        "nama" => "Nathania",
+    return view('profile', [
+        "nama" => "Nathania Salmadira Ramaadhani",
         "nohp" => "081234566",
-        "foto" => "Natha.wbp"
-    ]
+        "foto" => "foto almet poster 1(2).jpg"
+    ]);
+});
+
+Route:: get('/dosen', function () {
+    return view('dosen');
+});
+
+Route:: get ('/mahasiswa', function () {
+    return view ('mahasiswa');
 });
 
 Route:: get('/berita', function () {
