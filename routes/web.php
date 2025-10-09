@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Berita;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +21,7 @@ Route::get('/home', function () {
 
 Route:: get('/profile', function () {
     return view('profile', [
-        "nama" => "Nathania Salmadira Ramaadhani",
+        "nama" => "Nathania Salmadira Ramadhani",
         "nohp" => "081234566",
         "foto" => "foto almet poster 1(2).jpg"
     ]);
@@ -33,8 +35,36 @@ Route:: get ('/mahasiswa', function () {
     return view ('mahasiswa');
 });
 
-Route:: get('/berita', function () {
-    return view('berita');
+Route:: get('/berita/{slug}', function ($slugp) {
+
+    $data_berita = [
+        [
+            "judul" => "Unimus Jaya",
+            "slug" => "unimus-jaya",
+            "penulis" => "Nathaniasall",
+            "konten" => "Unimus Bergembira",
+        ],
+        [
+            "judul" => "Berita Terkini",
+            "slug" => "berita-terkini",
+            "penulis" => "Salmadirarr",
+            "konten" => "Seorang mahaasiswa Unimus prodi teknologi informasi berhasil meraih kejuaraan di POM tahun 2025"
+        ],
+    ];
+
+    $new_berita = [];
+    foreach($data_berita as $berita)
+    {
+        if($berita["slug"] === $slugp)
+        {
+            $new_berita = $berita;
+        }
+    } 
+
+    return view('singleberita', [
+        "title" => "Berita",
+        "new_berita" => $new_berita,
+    ]);
 });
 
 Route:: get ('/contact', function () {

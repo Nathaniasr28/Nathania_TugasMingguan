@@ -92,7 +92,7 @@
 
         <h3>Informasi Kontak</h3>
         <p><strong>Email:</strong> tiunimus@gmail.com</p>
-        <p><strong>Telepon:</strong> +62 812 3456 7890</p>
+        <p><strong>Telepon:</strong> +62 1234567890</p>
         <p><strong>Alamat:</strong> Jl. Soekarno Hatta No. 123, Semarang, Indonesia</p>
     </main>
 

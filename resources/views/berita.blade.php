@@ -3,74 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berita: Cara Belajar Laravel bagi Pemula</title>
+    <title>Berita Prodi Teknologi Informasi</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             background-color: #f4f6f8;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #4a90e2;
+            background-color: #0056b3;
             color: white;
             text-align: center;
             padding: 20px 0;
         }
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
         main {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 30px auto;
+            padding: 0 20px;
+        }
+        .berita {
             background-color: white;
-            padding: 25px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
         }
-        h2 {
-            color: #333;
+        .berita h2 {
+            color: #0056b3;
+            margin-top: 0;
         }
-        p {
-            line-height: 1.7;
+        .berita p {
             color: #555;
+            line-height: 1.6;
+        }
+        .tanggal {
+            font-size: 13px;
+            color: gray;
+            margin-bottom: 10px;
+        }
+        a.baca-selengkapnya {
+            display: inline-block;
+            margin-top: 10px;
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a.baca-selengkapnya:hover {
+            text-decoration: underline;
         }
         footer {
+            background-color: #0056b3;
+            color: white;
             text-align: center;
             padding: 15px;
-            background-color: #4a90e2;
-            color: white;
-            margin-top: 30px;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Berita Teknologi</h1>
-        <p>Tips dan Informasi Terbaru Dunia Pemrograman</p>
+        <h1>Berita Prodi Teknologi Informasi</h1>
+        <p>Universitas Muhammadiyah Semarang</p>
     </header>
 
     <main>
-        <h2>Cara Belajar Laravel bagi Pemula</h2>
-        <p><strong>Laravel</strong> merupakan salah satu framework PHP paling populer dan banyak digunakan oleh para developer untuk membangun aplikasi web modern. Dengan struktur yang rapi dan fitur yang lengkap, Laravel sangat cocok dipelajari bagi pemula yang ingin serius di bidang pengembangan web.</p>
+        <div class="berita">
+            <h2>Cara Belajar Laravel bagi Pemula</h2>
+            <p class="tanggal">Dipublikasikan: 5 Oktober 2025</p>
+            <p>Laravel merupakan salah satu framework PHP yang populer di kalangan pengembang web modern. Dengan struktur yang rapi dan fitur lengkap, Laravel cocok untuk pemula yang ingin serius belajar pemrograman web.</p>
+            <a href="#" class="baca-selengkapnya">Baca selengkapnya...</a>
+        </div>
 
-        <h3>1. Pahami Dasar-Dasar PHP</h3>
-        <p>Sebelum memulai belajar Laravel, pastikan kamu sudah memahami dasar-dasar PHP seperti variabel, fungsi, array, dan konsep OOP (Object Oriented Programming). Ini penting karena Laravel dibangun di atas bahasa PHP.</p>
+        <div class="berita">
+            <h2>Mahasiswa TI UNIMUS Menang Kompetisi Hackathon 2025</h2>
+            <p class="tanggal">Dipublikasikan: 2 Oktober 2025</p>
+            <p>Tim mahasiswa Prodi Teknologi Informasi Universitas Muhammadiyah Semarang berhasil meraih juara 1 dalam ajang Hackathon Nasional 2025. Inovasi aplikasi mereka membantu UMKM dalam pemasaran digital.</p>
+            <a href="#" class="baca-selengkapnya">Baca selengkapnya...</a>
+        </div>
 
-        <h3>2. Instalasi Laravel</h3>
-        <p>Untuk menginstal Laravel, kamu bisa menggunakan <code>Composer</code> dengan perintah <code>composer create-project laravel/laravel nama-proyek</code>. Setelah itu, jalankan server lokal dengan perintah <code>php artisan serve</code> dan buka di browser.</p>
+        <div class="berita">
+            <h2>Pelatihan Cyber Security untuk Mahasiswa Baru</h2>
+            <p class="tanggal">Dipublikasikan: 28 September 2025</p>
+            <p>Program Studi TI mengadakan pelatihan dasar keamanan siber bagi mahasiswa baru. Acara ini bertujuan untuk meningkatkan kesadaran tentang pentingnya keamanan data di dunia digital.</p>
+            <a href="#" class="baca-selengkapnya">Baca selengkapnya...</a>
+        </div>
 
-        <h3>3. Pelajari Struktur Folder Laravel</h3>
-        <p>Laravel memiliki struktur folder yang terorganisir, seperti folder <code>routes</code> untuk rute, <code>resources</code> untuk tampilan, dan <code>app</code> untuk logika aplikasi. Pahami peran masing-masing folder agar mudah mengembangkan proyek.</p>
-
-        <h3>4. Gunakan Dokumentasi Resmi</h3>
-        <p>Dokumentasi resmi Laravel di <a href="https://laravel.com/docs" target="_blank">laravel.com/docs</a> sangat lengkap dan mudah dipahami. Luangkan waktu untuk membaca dan mencoba setiap fitur yang dijelaskan di sana.</p>
-
-        <h3>5. Latihan dan Buat Proyek Kecil</h3>
-        <p>Cobalah membuat proyek sederhana seperti sistem login, blog, atau manajemen data mahasiswa. Dengan latihan langsung, kamu akan lebih cepat memahami konsep MVC dan fitur Laravel lainnya.</p>
-
-        <p><em>Dengan konsistensi belajar dan praktik, Laravel bisa menjadi framework andalanmu untuk membuat aplikasi web profesional.</em></p>
+        <div class="berita">
+            <h2>Workshop UI/UX Design Bersama Praktisi Industri</h2>
+            <p class="tanggal">Dipublikasikan: 25 September 2025</p>
+            <p>Dalam workshop ini, peserta diajak langsung mempraktikkan pembuatan desain antarmuka aplikasi dengan pendekatan user experience modern. Narasumber berasal dari perusahaan startup ternama di Indonesia.</p>
+            <a href="#" class="baca-selengkapnya">Baca selengkapnya...</a>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 Portal Berita Teknologi | Dibuat oleh Mahasiswa TI</p>
+        <p>&copy; 2025 Program Studi Teknologi Informasi | Universitas Muhammadiyah Semarang</p>
     </footer>
 </body>
 </html>
