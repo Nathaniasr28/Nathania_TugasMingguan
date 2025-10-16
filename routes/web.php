@@ -1,72 +1,79 @@
 <?php
 
-use App\Models\Berita;
-
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
-Route::get('/home', function () {
+// Halaman Home
+Route::get('/', function () {
     return view('home');
 });
 
-Route:: get('/profile', function () {
-    return view('profile', [
-        "nama" => "Nathania Salmadira Ramadhani",
-        "nohp" => "081234566",
-        "foto" => "foto almet poster 1(2).jpg"
-    ]);
+// Halaman Profil
+Route::get('/profile', function () {
+    return view('profile');
 });
 
-Route:: get('/dosen', function () {
+// Halaman Dosen
+Route::get('/dosen', function () {
     return view('dosen');
 });
 
-Route:: get ('/mahasiswa', function () {
-    return view ('mahasiswa');
+// Halaman Mahasiswa
+Route::get('/mahasiswa', function () {
+    return view('mahasiswa');
 });
 
-Route:: get('/berita/{slug}', function ($slugp) {
+// Halaman Kontak
+Route::get('/contact', function () {
+    return view('contact');
+});
 
+// Halaman daftar berita
+Route::get('/berita', function () {
+    return view('berita');
+});
+
+// Halaman detail berita (pakai slug)
+Route::get('/berita/{slug}', function ($slug) {
+    // Daftar berita (slug harus sama dengan yang kamu tulis di href di berita.blade.php)
     $data_berita = [
         [
-            "judul" => "Unimus Jaya",
-            "slug" => "unimus-jaya",
-            "penulis" => "Nathaniasall",
-            "konten" => "Unimus Bergembira",
+            "judul" => "Cara Belajar Laravel bagi Pemula",
+            "slug" => "cara-belajar-laravel",
+            "penulis" => "Tim Redaksi Teknologi",
+            "tanggal" => "5 Oktober 2025",
+            "isi" => "Laravel merupakan salah satu framework PHP populer. Artikel ini membahas langkah-langkah belajar Laravel bagi pemula..."
         ],
         [
-            "judul" => "Berita Terkini",
-            "slug" => "berita-terkini",
-            "penulis" => "Salmadirarr",
-            "konten" => "Seorang mahaasiswa Unimus prodi teknologi informasi berhasil meraih kejuaraan di POM tahun 2025"
+            "judul" => "Mahasiswa TI UNIMUS Menang Kompetisi Hackathon 2025",
+            "slug" => "hackathon-2025",
+            "penulis" => "Admin TI",
+            "tanggal" => "2 Oktober 2025",
+            "isi" => "Tim mahasiswa Prodi TI UNIMUS berhasil meraih juara 1 dalam ajang Hackathon Nasional 2025..."
         ],
+        [
+            "judul" => "Pelatihan Cyber Security untuk Mahasiswa Baru",
+            "slug" => "pelatihan-cybersecurity",
+            "penulis" => "Admin TI",
+            "tanggal" => "28 September 2025",
+            "isi" => "Program Studi TI mengadakan pelatihan dasar keamanan siber bagi mahasiswa baru..."
+        ],
+        [
+            "judul" => "Workshop UI/UX Design Bersama Praktisi Industri",
+            "slug" => "workshop-uiux",
+            "penulis" => "Tim Redaksi",
+            "tanggal" => "25 September 2025",
+            "isi" => "Peserta diajak langsung mempraktikkan pembuatan desain antarmuka aplikasi yang menarik..."
+        ]
     ];
 
-    $new_berita = [];
-    foreach($data_berita as $berita)
-    {
-        if($berita["slug"] === $slugp)
-        {
-            $new_berita = $berita;
-        }
-    } 
+    // Cari berita sesuai slug
+    $berita = collect($data_berita)->firstWhere('slug', $slug);
 
-    return view('singleberita', [
-        "title" => "Berita",
-        "new_berita" => $new_berita,
-    ]);
-});
+    // Kalau gak ketemu, munculkan error 404
+    if (!$berita) {
+        abort(404);
+    }
 
-Route:: get ('/contact', function () {
-    return view ('contact');
+    // Kirim data berita ke halaman singleberita.blade.php
+    return view('singleberita', ['berita' => $berita]);
 });

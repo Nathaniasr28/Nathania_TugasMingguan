@@ -75,29 +75,29 @@
         <div class="berita">
             <h2>Cara Belajar Laravel bagi Pemula</h2>
             <p class="tanggal">Dipublikasikan: 5 Oktober 2025</p>
-            <p>Laravel merupakan salah satu framework PHP yang populer di kalangan pengembang web modern. Dengan struktur yang rapi dan fitur lengkap, Laravel cocok untuk pemula yang ingin serius belajar pemrograman web.</p>
-            <a href="#" class="baca-selengkapnya">Baca selengkapnya...</a>
+            <p>Laravel merupakan salah satu framework PHP yang populer di kalangan pengembang web modern...</p>
+            <a href="/berita/cara-belajar-laravel" class="baca-selengkapnya">Baca selengkapnya...</a>
         </div>
 
         <div class="berita">
             <h2>Mahasiswa TI UNIMUS Menang Kompetisi Hackathon 2025</h2>
             <p class="tanggal">Dipublikasikan: 2 Oktober 2025</p>
-            <p>Tim mahasiswa Prodi Teknologi Informasi Universitas Muhammadiyah Semarang berhasil meraih juara 1 dalam ajang Hackathon Nasional 2025. Inovasi aplikasi mereka membantu UMKM dalam pemasaran digital.</p>
-            <a href="#" class="baca-selengkapnya">Baca selengkapnya...</a>
+            <p>Tim mahasiswa Prodi TI UNIMUS berhasil meraih juara 1 dalam ajang Hackathon Nasional...</p>
+            <a href="/berita/hackathon-2025" class="baca-selengkapnya">Baca selengkapnya...</a>
         </div>
 
         <div class="berita">
             <h2>Pelatihan Cyber Security untuk Mahasiswa Baru</h2>
             <p class="tanggal">Dipublikasikan: 28 September 2025</p>
-            <p>Program Studi TI mengadakan pelatihan dasar keamanan siber bagi mahasiswa baru. Acara ini bertujuan untuk meningkatkan kesadaran tentang pentingnya keamanan data di dunia digital.</p>
-            <a href="#" class="baca-selengkapnya">Baca selengkapnya...</a>
+            <p>Program Studi TI mengadakan pelatihan dasar keamanan siber bagi mahasiswa baru...</p>
+            <a href="/berita/pelatihan-cybersecurity" class="baca-selengkapnya">Baca selengkapnya...</a>
         </div>
 
         <div class="berita">
             <h2>Workshop UI/UX Design Bersama Praktisi Industri</h2>
             <p class="tanggal">Dipublikasikan: 25 September 2025</p>
-            <p>Dalam workshop ini, peserta diajak langsung mempraktikkan pembuatan desain antarmuka aplikasi dengan pendekatan user experience modern. Narasumber berasal dari perusahaan startup ternama di Indonesia.</p>
-            <a href="#" class="baca-selengkapnya">Baca selengkapnya...</a>
+            <p>Peserta diajak langsung mempraktikkan pembuatan desain antarmuka aplikasi...</p>
+            <a href="/berita/workshop-uiux" class="baca-selengkapnya">Baca selengkapnya...</a>
         </div>
     </main>
 
