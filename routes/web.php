@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 // Halaman Home
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('home');
 });
 

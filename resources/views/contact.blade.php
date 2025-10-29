@@ -12,10 +12,10 @@
             padding: 0;
         }
         header {
-            background-color: #4a90e2;
+            background: #0A3D62;
             color: white;
+            padding: 15px;
             text-align: center;
-            padding: 20px 0;
         }
         main {
             max-width: 800px;
@@ -44,7 +44,7 @@
             border: 1px solid #ccc;
         }
         button {
-            background-color: #4a90e2;
+            background-color: #0A3D62;
             color: white;
             border: none;
             padding: 10px 15px;
@@ -53,12 +53,12 @@
             cursor: pointer;
         }
         button:hover {
-            background-color: #357abd;
+            background-color: #0A3D62;
         }
         footer {
             text-align: center;
             padding: 15px;
-            background-color: #4a90e2;
+            background-color: #0A3D62;
             color: white;
             margin-top: 30px;
         }

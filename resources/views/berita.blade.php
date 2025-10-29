@@ -12,7 +12,7 @@
             padding: 0;
         }
         header {
-            background-color: #0056b3;
+            background-color: #0A3D62;
             color: white;
             text-align: center;
             padding: 20px 0;
@@ -34,7 +34,7 @@
             box-shadow: 0 3px 8px rgba(0,0,0,0.1);
         }
         .berita h2 {
-            color: #0056b3;
+            color: #0A3D62;
             margin-top: 0;
         }
         .berita p {
@@ -49,7 +49,7 @@
         a.baca-selengkapnya {
             display: inline-block;
             margin-top: 10px;
-            color: #0056b3;
+            color: #0A3D62;
             text-decoration: none;
             font-weight: bold;
         }
@@ -57,7 +57,7 @@
             text-decoration: underline;
         }
         footer {
-            background-color: #0056b3;
+            background-color: #0A3D62;
             color: white;
             text-align: center;
             padding: 15px;
