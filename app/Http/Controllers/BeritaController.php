@@ -10,7 +10,7 @@ class BeritaController extends Controller
     public function index()
     {
         return view(view: 'berita', data: [
-            title =>"Berita",
+            'title' =>'Berita',
             "beritas" => \App\Models\Berita::ambildata()
         ]);
     }

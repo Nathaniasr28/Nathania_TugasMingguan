@@ -34,7 +34,9 @@ Route::get('/contact', function () {
 Route::get('/berita', [BeritaController::class, 'index']);
 Route::get('/berita/{slug}', [BeritaController::class,'datatampil']);
 
+// Mahasiswa Controller
 Route::get('/mahasiswa', [MahasiswaController::class, 'index'])->name('mahasiswa');
-Route::get('/tambahmahasiswa', [MahasiswaController::class, 'tambahmahasiswa']);
+Route::get('/tambahmahasiswa', [MahasiswaController::class, 'tambahmahasiswa'])->name('tambahmahasiswa');
 
-Route::post('/insertdata', [MahasiswaController::class, 'insertdata'])->name('mahasiswa');
+// ✅ Tambahan route untuk proses simpan data form
+Route::post('/mahasiswa/store', [MahasiswaController::class, 'insertdata'])->name('mahasiswa.store');
