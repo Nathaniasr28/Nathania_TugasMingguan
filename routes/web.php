@@ -30,7 +30,6 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-// Halaman daftar berita
 Route::get('/berita', [BeritaController::class, 'index']);
 Route::get('/berita/{slug}', [BeritaController::class,'datatampil']);
 
@@ -38,5 +37,7 @@ Route::get('/berita/{slug}', [BeritaController::class,'datatampil']);
 Route::get('/mahasiswa', [MahasiswaController::class, 'index'])->name('mahasiswa');
 Route::get('/tambahmahasiswa', [MahasiswaController::class, 'tambahmahasiswa'])->name('tambahmahasiswa');
 
-// ✅ Tambahan route untuk proses simpan data form
+Route::get('/tampildata/{id}', [MahasiswaController::class, 'index'])->name('tampildata');
+Route::get('/editdata/{id}', [MahasiswaController::class, 'tambahmahasiswa'])->name('editdata');
+
 Route::post('/mahasiswa/store', [MahasiswaController::class, 'insertdata'])->name('mahasiswa.store');
