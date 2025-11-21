@@ -41,3 +41,7 @@ Route::get('/tampildata/{id}', [MahasiswaController::class, 'index'])->name('tam
 Route::get('/editdata/{id}', [MahasiswaController::class, 'tambahmahasiswa'])->name('editdata');
 
 Route::post('/mahasiswa/store', [MahasiswaController::class, 'insertdata'])->name('mahasiswa.store');
+
+
+Route::get('/mahasiswa/edit/{id}', [MahasiswaController::class, 'edit'])->name('mahasiswa.edit');
+Route::put('/mahasiswa/update/{id}', [MahasiswaController::class, 'update'])->name('mahasiswa.update');

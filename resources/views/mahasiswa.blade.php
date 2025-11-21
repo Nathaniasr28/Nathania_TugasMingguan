@@ -107,7 +107,7 @@
                     <td>{{ $mahasiswa["email"] }}</td>
                     <td>{{ $mahasiswa["nohp"] }}</td>
                     <td>
-                        <button class="btn btn-primary btn-sm">EDIT</button>
+                        <a href="/mahasiswa/edit/{{ $mahasiswa->id }}" class="btn btn-primary btn-sm">EDIT</a>
                         <button class="btn btn-danger btn-sm">HAPUS</button>
                     </td>
                 </tr>
