@@ -34,7 +34,7 @@ class MahasiswaController extends Controller
     {
         $mahasiswa = Mahasiswa::find($id);
 
-        return view('editdata', [
+        return view('edit', [
             'title' => 'Edit Data Mahasiswa',
             'mahasiswa' => $mahasiswa
         ]);
@@ -42,9 +42,17 @@ class MahasiswaController extends Controller
 
     public function update(Request $request, $id)
     {
-        $mahasiswa = Mahasiswa::find($id);
-        $mahasiswa->update($request->all());
+        $data = Mahasiswa::find($id);
+        $data->update($request->all());
 
-        return redirect()->route('mahasiswa')->with('success', 'Data Berhasil Diupdate');
+        return redirect()->route('mahasiswa')->with('success', 'Data Berhasil Diupdate!!');
+    }
+
+    public function deletedata ($id): RedirectResponse
+    {
+        $data= Mahasiswa :: find($id);
+        $data->deletedata();
+
+        return redirect()->route('mahasiswa')->with('success', 'Data Berhasil Dihapus!!');
     }
 }

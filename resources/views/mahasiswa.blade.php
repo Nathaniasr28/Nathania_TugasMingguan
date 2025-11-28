@@ -108,7 +108,8 @@
                     <td>{{ $mahasiswa["nohp"] }}</td>
                     <td>
                         <a href="/mahasiswa/edit/{{ $mahasiswa->id }}" class="btn btn-primary btn-sm">EDIT</a>
-                        <button class="btn btn-danger btn-sm">HAPUS</button>
+                        <a href="deletedata/{{ $mahasiswa->id }}" class="btn btn-danger"
+                        onclick="return confirm('Yakin Hapus?')">HAPUS</a>
                     </td>
                 </tr>
                 <?php $i++; ?>

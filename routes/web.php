@@ -45,3 +45,5 @@ Route::post('/mahasiswa/store', [MahasiswaController::class, 'insertdata'])->nam
 
 Route::get('/mahasiswa/edit/{id}', [MahasiswaController::class, 'edit'])->name('mahasiswa.edit');
 Route::put('/mahasiswa/update/{id}', [MahasiswaController::class, 'update'])->name('mahasiswa.update');
+
+Route::get('/deletedata/{id}', [MahasiswaController::class, 'deletedata'])->name('deletedata');
