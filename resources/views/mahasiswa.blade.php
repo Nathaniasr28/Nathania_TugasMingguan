@@ -51,7 +51,7 @@
         }
 
         .btn-primary {
-            background-color: #0d6efd;
+            background-color: #0A3D62
             border: none;
         }
 
@@ -108,7 +108,7 @@
                     <td>{{ $mahasiswa["nohp"] }}</td>
                     <td>
                         <a href="/mahasiswa/edit/{{ $mahasiswa->id }}" class="btn btn-primary btn-sm">EDIT</a>
-                        <a href="deletedata/{{ $mahasiswa->id }}" class="btn btn-danger"
+                        <a href="deletedata/{{ $mahasiswa->id }}" class="btn btn-danger delete"
                         onclick="return confirm('Yakin Hapus?')">HAPUS</a>
                     </td>
                 </tr>

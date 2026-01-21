@@ -48,10 +48,10 @@ class MahasiswaController extends Controller
         return redirect()->route('mahasiswa')->with('success', 'Data Berhasil Diupdate!!');
     }
 
-    public function deletedata ($id): RedirectResponse
+    public function deletedata ($id)
     {
         $data= Mahasiswa :: find($id);
-        $data->deletedata();
+        $data->delete();
 
         return redirect()->route('mahasiswa')->with('success', 'Data Berhasil Dihapus!!');
     }

@@ -6,16 +6,32 @@
     <title>Kontak Kami</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f8;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f0f2f5;
             margin: 0;
             padding: 0;
         }
-        header {
-            background: #0A3D62;
-            color: white;
-            padding: 15px;
+        /* Navbar like mahasiswa */
+        nav {
+            background-color: #3d6480;
+            padding: 10px 0;
             text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        nav a:hover,
+        nav a.active {
+            text-decoration: underline;
+        }
+
+        header {
+            color: #0A3D62;
+            text-align: center;
+            padding: 10px 0 0;
         }
         main {
             max-width: 800px;
@@ -65,34 +81,26 @@
     </style>
 </head>
 <body>
+    <nav>
+        <a href="/home">Home</a>
+        <a href="/profile">Profil</a>
+        <a href="/berita">Berita</a>
+        <a href="/dosen">Dosen</a>
+        <a href="/mahasiswa">Mahasiswa</a>
+        <a href="/contact" class="active">Kontak</a>
+    </nav>
+
     <header>
-        <h1>Portal Berita Teknologi</h1>
+        <h1>Kontak</h1>
         <p>Hubungi Kami</p>
     </header>
 
     <main>
-        <h2>Kontak Kami</h2>
-        <p>Jika kamu memiliki pertanyaan, saran, atau ingin bekerja sama, silakan hubungi kami melalui form di bawah ini atau lewat kontak yang tertera.</p>
-
-        <form action="#" method="POST">
-            @csrf
-            <label>Nama Lengkap:</label>
-            <input type="text" name="nama" placeholder="Masukkan nama kamu" required>
-
-            <label>Email:</label>
-            <input type="email" name="email" placeholder="Masukkan email kamu" required>
-
-            <label>Pesan:</label>
-            <textarea name="pesan" rows="5" placeholder="Tulis pesan kamu di sini..." required></textarea>
-
-            <button type="submit">Kirim Pesan</button>
-        </form>
-
-        <hr style="margin: 30px 0;">
+        <p>Jika memiliki pertanyaan, saran, atau ingin bekerja sama, silakan hubungi kami melalui kontak yang tertera.</p>
 
         <h3>Informasi Kontak</h3>
-        <p><strong>Email:</strong> tiunimus@gmail.com</p>
-        <p><strong>Telepon:</strong> +62 1234567890</p>
+        <p><strong>Email:</strong> nathaniasr@gmail.com </p>
+        <p><strong>Telepon:</strong> +6288238120250</p>
         <p><strong>Alamat:</strong> Jl. Soekarno Hatta No. 123, Semarang, Indonesia</p>
     </main>
 

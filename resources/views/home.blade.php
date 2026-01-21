@@ -27,14 +27,18 @@
             padding: 10px;
             text-align: center;
         }
-        nav a {
+        nav a, nav .nav-link, nav button.nav-link {
             color: white;
-            margin: 0 15px;
+            margin: 0 12px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            display: inline-block;
+            padding: 8px 14px;
+            border-radius: 4px;
         }
-        nav a:hover {
-            text-decoration: underline;
+        nav a:hover, nav button.nav-link:hover {
+            background: rgba(255,255,255,0.06);
+            text-decoration: none;
         }
         main {
             padding: 20px;
@@ -51,22 +55,36 @@
             padding: 10px;
             margin-top: 20px;
         }
+        /* logout button inside nav should look like links */
+        nav form.logout-form { display:inline; }
+        .btn-logout { background:transparent; border:none; color:white; font-weight:600; cursor:pointer; padding:8px 14px; border-radius:4px; }
     </style>
 </head>
 <body>
 
-    <header>
+    <header style="position:relative;">
         <h1>Selamat Datang di TI UNIMUS</h1>
-        <p>Website Resmi Teknologi Informasi</p>
+        <p>Website Teknologi Informasi | Nathania Salmadira Ramadhani</p>
+
+        <!-- auth nav removed from header; auth link will appear inside main nav -->
     </header>
 
     <nav>
-        <a href="/home">Home</a>
-        <a href="/profile">Profil</a>
-        <a href="/berita">Berita</a>
-        <a href="/dosen">Dosen</a>
-        <a href="/mahasiswa">Mahasiswa</a>
-        <a href="/contact">Kontak</a>
+        <a href="/home" class="nav-link">Home</a>
+        <a href="/profile" class="nav-link">Profil</a>
+        <a href="/berita" class="nav-link">Berita</a>
+        <a href="/dosen" class="nav-link">Dosen</a>
+        <a href="/mahasiswa" class="nav-link">Mahasiswa</a>
+        <a href="/contact" class="nav-link">Kontak</a>
+
+        @auth
+            <form method="POST" action="{{ route('logout') }}" class="logout-form">
+                @csrf
+                <button type="submit" class="nav-link btn-logout">Logout</button>
+            </form>
+        @else
+            <a href="{{ route('login') }}" class="nav-link">Login</a>
+        @endauth
     </nav>
 
     <main>

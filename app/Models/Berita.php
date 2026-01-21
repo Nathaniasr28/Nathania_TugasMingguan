@@ -9,19 +9,12 @@ class Berita extends Model
 {
     private static $data_berita = [
         [
-            "judul" => "Cara Belajar Laravel bagi Pemula",
-            "slug" => "cara-belajar-laravel",
-            "penulis" => "Tim Redaksi Teknologi",
-            "tanggal" => "5 Oktober 2025",
-            "isi" => "Laravel merupakan salah satu framework PHP populer. Artikel ini membahas langkah-langkah belajar Laravel bagi pemula..."
-        ],
-
-        [
-            "judul" => "Mahasiswa TI UNIMUS Menang Kompetisi Hackathon 2025",
+            "judul" => "OPEN HOUSE HMTI 2026",
             "slug" => "hackathon-2025",
             "penulis" => "Admin TI",
             "tanggal" => "2 Oktober 2025",
-            "isi" => "Tim mahasiswa Prodi TI UNIMUS berhasil meraih juara 1 dalam ajang Hackathon Nasional 2025..."
+            "isi" => "acara yang diadakan oleh Himpunan Mahasiswa Teknologi Informasi, untuk memperkenalkan diri, program kerja, dan departemen-departemennya kepada mahasiswa baru 2025. Open House ini bertujuan merekrut anggota baru, membangun kebersamaan, dan menunjukkan kegiatan mereka melalui
+            presentasi, sesi tanya jawab, dan kegiatan interaktif, yang akan dilaksanakan pada tanggal 10 Januari 2026."
         ],
 
         [
@@ -29,16 +22,14 @@ class Berita extends Model
             "slug" => "pelatihan-cybersecurity",
             "penulis" => "Admin TI",
             "tanggal" => "28 September 2025",
-            "isi" => "Program Studi TI mengadakan pelatihan dasar keamanan siber bagi mahasiswa baru..."
+            "isi" => "Program Studi TI mengadakan pelatihan dasar keamanan siber bagi mahasiswa baru.
+            Berikut adalah poin-poin penting yang umumnya dicakup dalam pelatihan dasar tersebut:
+1. Kesadaran Keamanan Siber Dasar (Cybersecurity Awareness)
+2. Pengamanan Perangkat dan Akun
+3. Etika dan Hukum: Pelatihan juga memberikan pemahaman tentang etika keamanan siber dan masalah hukum yang terkait dengan kejahatan digital."
         ],
 
-        [
-            "judul" => "Workshop UI/UX Design Bersama Praktisi Industri",
-            "slug" => "workshop-uiux",
-            "penulis" => "Tim Redaksi",
-            "tanggal" => "25 September 2025",
-            "isi" => "Peserta diajak langsung mempraktikkan pembuatan desain antarmuka aplikasi yang menarik..."
-        ]
+
         ];
         public static function ambildata()
         {

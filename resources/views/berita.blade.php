@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berita Prodi Teknologi Informasi</title>
+    <title>Berita dan Informasi</title>
     <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -11,21 +11,31 @@
             margin: 0;
             padding: 0;
         }
-        header {
-            background-color: #0A3D62;
-            color: white;
+        /* Navbar exactly like mahasiswa page */
+        .navbar {
+            background-color: #3d6480;
+            padding: 10px 0;
             text-align: center;
-            padding: 20px 0;
         }
-        header h1 {
-            margin: 0;
-            font-size: 28px;
+        .navbar a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .navbar a:hover,
+        .navbar a.active {
+            text-decoration: underline;
         }
         main {
             max-width: 1000px;
             margin: 30px auto;
             padding: 0 20px;
         }
+        /* Page header below navbar */
+        .page-header { text-align:center; margin-top:18px; }
+        .page-header h1 { margin:0; font-size:28px; color:#0A3D62; }
+        .page-header p { margin:4px 0 0; color:#6b7280; }
         .berita {
             background-color: white;
             border-radius: 10px;
@@ -66,23 +76,31 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Berita Prodi Teknologi Informasi</h1>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a class="brand" href="/home">UNIMUS TI</a>
+        </div>
+        <div class="nav-right">
+            <a href="/home" class="nav-btn">Home</a>
+            <a href="/berita" class="nav-btn active">Berita</a>
+            <a href="/mahasiswa" class="nav-btn">Mahasiswa</a>
+            <a href="/dosen" class="nav-btn">Dosen</a>
+            <a href="/contact" class="nav-btn">Kontak</a>
+            <a href="{{ route('login') }}" class="nav-btn">Login</a>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <h1>Berita dan Informasi</h1>
         <p>Universitas Muhammadiyah Semarang</p>
     </header>
 
     <main>
-        <div class="berita">
-            <h2>Cara Belajar Laravel bagi Pemula</h2>
-            <p class="tanggal">Dipublikasikan: 5 Oktober 2025</p>
-            <p>Laravel merupakan salah satu framework PHP yang populer di kalangan pengembang web modern...</p>
-            <a href="/berita/cara-belajar-laravel" class="baca-selengkapnya">Baca selengkapnya...</a>
-        </div>
 
         <div class="berita">
-            <h2>Mahasiswa TI UNIMUS Menang Kompetisi Hackathon 2025</h2>
-            <p class="tanggal">Dipublikasikan: 2 Oktober 2025</p>
-            <p>Tim mahasiswa Prodi TI UNIMUS berhasil meraih juara 1 dalam ajang Hackathon Nasional...</p>
+            <h2>OPEN HOUSE HMTI 2026</h2>
+            <p class="tanggal">Dipublikasikan: 2 Januari 2026</p>
+            <p>acara yang diadakan oleh Himpunan Mahasiswa Teknologi Informasi...</p>
             <a href="/berita/hackathon-2025" class="baca-selengkapnya">Baca selengkapnya...</a>
         </div>
 
@@ -92,17 +110,10 @@
             <p>Program Studi TI mengadakan pelatihan dasar keamanan siber bagi mahasiswa baru...</p>
             <a href="/berita/pelatihan-cybersecurity" class="baca-selengkapnya">Baca selengkapnya...</a>
         </div>
-
-        <div class="berita">
-            <h2>Workshop UI/UX Design Bersama Praktisi Industri</h2>
-            <p class="tanggal">Dipublikasikan: 25 September 2025</p>
-            <p>Peserta diajak langsung mempraktikkan pembuatan desain antarmuka aplikasi...</p>
-            <a href="/berita/workshop-uiux" class="baca-selengkapnya">Baca selengkapnya...</a>
-        </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 Program Studi Teknologi Informasi | Universitas Muhammadiyah Semarang</p>
+        <p>&copy 2026 Program Studi Teknologi Informasi | Universitas Muhammadiyah Semarang</p>
     </footer>
 </body>
 </html>

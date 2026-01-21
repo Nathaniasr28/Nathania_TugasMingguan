@@ -9,17 +9,23 @@ class BeritaController extends Controller
 {
     public function index()
     {
-        return view(view: 'berita', data: [
-            'title' =>'Berita',
-            "beritas" => \App\Models\Berita::ambildata()
+        return view('berita', [
+            'title' => 'Berita',
+            'beritas' => Berita::ambildata()
         ]);
     }
 
-    // Menampilkan detail berita berdasarkan slug
-    public function show($slug)
+    public function datatampil($slug)
     {
+        $berita = Berita::caridata($slug);
 
+        if (empty($berita)) {
+            abort(404);
+        }
 
-
+        return view('singleberita', [
+            'title' => $berita['judul'],
+            'berita' => $berita
+        ]);
     }
 }

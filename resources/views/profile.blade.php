@@ -4,7 +4,7 @@ $mahasiswa = [
     "nama"   => "Nathania Salmadira Ramadhani",
     "nim"    => "13242420036",
     "email"  => "nathania@example.com",
-    "foto"   => "img/joko.webp" // foto placeholder
+    "foto"   => "img/nathania.almet.JPG"
 ];
 ?>
 
